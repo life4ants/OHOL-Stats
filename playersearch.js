@@ -440,20 +440,20 @@ function getDateStringFromUnixTime(unixTimeStamp) {
 }
 
 function jsDateToDate(jsDate, date) {
-	date[0] = jsDate.getFullYear();
-	date[1] = jsDate.getMonth()+1;
-	date[2] = jsDate.getDate();
+	date[0] = jsDate.getUTCFullYear();
+	date[1] = jsDate.getUTCMonth()+1;
+	date[2] = jsDate.getUTCDate();
 }
 
 function increaseDate(date) {
 	let d = new Date(date[0]+'-'+date[1]+'-'+date[2]);
-	d.setDate(d.getDate()+1);
+	d.setUTCDate(d.getUTCDate()+1);
 	jsDateToDate(d, date);
 }
 
 function decreaseDate(date) {
 	let d = new Date(date[0]+'-'+date[1]+'-'+date[2]);
-	d.setDate(d.getDate()-1);
+	d.setUTCDate(d.getUTCDate()-1);
 	jsDateToDate(d, date);
 }
 
