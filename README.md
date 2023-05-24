@@ -1,8 +1,10 @@
-# ohol_nodejs_stats
+# OHOL-Stats
 
 This repository contains different scripts related to a game called OneHourOneLife https://github.com/jasonrohrer/OneLife 
 These scripts can be used to process ohol data from: http://publicdata.onehouronelife.com/
 The data is described here: https://onehouronelife.com/forums/viewtopic.php?id=2529
+
+Forked from https://github.com/hetuw/ohol_nodejs_stats. I added getmylives.js and fixed a date issue that caused issues crossing a year. There may still be other bugs. I can't get lineage links to work, not sure how Whatever/Hetuw intended them to work.
 
 You will need nodejs to execute the scripts
 
